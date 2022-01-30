@@ -1,0 +1,716 @@
+@import "_nullstyle";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&display=swap");
+body {
+    font-family: Montserrat;
+    
+}
+.conteiner {
+    max-width: 1240px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.wrapper {
+    height: 100%;
+    
+}
+.ibg {
+    position: relative;
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
+.title {
+    font-family: "Merriweather Sans";
+    font-weight: bold;
+    font-size: 36px;
+    line-height: calc(45 / 36 * 100%);
+}
+.lable {
+    font-family: "Merriweather Sans";
+    font-weight: bold;
+    font-size: 22px;
+    line-height:calc(28 / 22 * 100%);
+}
+.column-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(24 / 14 * 100%);
+    color: #000000;
+    opacity: 0.5;
+}
+
+//============HEADER=======================================================>
+
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    &__row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 40px 22px;
+        justify-content: space-between;
+        @media (max-width: 800px) {
+            padding: 20px 22px;
+        }
+    }
+
+    &__logo {
+    }
+
+    &__menu {
+    }
+}
+
+
+
+//!============PAGE=======================================================>
+
+.page{
+flex: 1 1 auto;
+}
+.background {
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0; 
+        width: 100%;
+        min-height: 100%;
+        
+        
+    }
+}
+//============ABOUT=======================================================>
+
+.about {
+    position: relative;
+    margin: 384px 25px 0px 63px;
+    max-width: 741px;
+    background: #fff;
+    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
+    padding: 0 0 75px 0;
+    @media (min-height: 1010px) {
+        margin: 684px 33px 0px 33px;
+    }
+    @media (min-width: 1900px) {
+        margin: 464px 25px 0px 323px;
+    }
+    @media (max-width: 850px) {
+        margin: 384px 63px 0px 63px;
+    }
+    @media (max-width: 600px) {
+        margin: 384px 33px 0px 33px;
+    }
+    
+    &__block {
+        max-width: 521px;
+        
+    }
+
+    &__body {
+        padding: 96px 30px 0 64px;
+        @media (max-width: 900px) {
+            padding: 60px 64px 0 64px;
+        }
+        @media (max-width: 500px) {
+            padding: 60px 44px 0 44px;
+        }
+    }
+
+    &__title {
+        font-family: "Merriweather Sans";
+        font-weight: bold;
+        font-size: 39px;
+        line-height: calc(49 / 39 * 100%);
+        span{
+            color:#F78065;
+        }
+        @media (max-width: 900px) {
+            font-size: 35px;
+        line-height: calc(49 / 35 * 100%);
+        @media (max-width: 500px) {
+            font-size: 30px;
+        line-height: calc(39 / 30 * 100%);
+        }
+        
+        span{
+            color:#F78065;
+        }
+        }
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: calc(24 / 20 * 100%);
+        opacity: 0.6;
+        margin: 29px 0px 0px 0px;
+        @media (max-width: 500px) {
+        font-size: 18px;
+        line-height: calc(22 / 18 * 100%);
+        }
+    }
+
+}
+.btn {
+    margin: 29px  0px 0px 62px;
+    max-width: 250px;
+    height: 65px;
+    display: flex;
+    
+    align-items: center;
+    background: #F78065;
+    position: relative;
+    @media (max-width: 500px) {
+        margin: 29px  0px 0px 42px;
+        max-width: 200px;
+        height: 65px;
+    }
+    @media (max-width: 340px) {
+        margin: 29px  0px 0px 42px;
+        max-width: 180px;
+        height: 65px;
+    }
+    
+    &__text {
+        
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 125%;
+        color: #fff;
+        margin: 0px  0px 0px 101px;
+        @media (max-width: 500px) {
+            margin: 0px  0px 0px 81px;
+        }
+        @media (max-width: 340px) {
+            margin: 0px  0px 0px 71px;
+        }
+        
+        
+    }
+    &__img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 20px  0px 0px 69px;
+        @media (max-width: 500px) {
+            margin: 20px  0px 0px 49px;
+        }
+        @media (max-width: 340px) {
+            margin: 20px  0px 0px 39px;
+        }
+    }
+}
+//============COLUMNS=======================================================>
+
+.columns {
+margin: 128px 0px 0px 0px;
+
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin: 0 -20.5px;
+        flex-direction: row;
+        @media (max-width: 1300px) {
+            flex-direction: column;
+            margin: 0;
+        }
+    }
+
+    &__column {
+        flex: 0 1 33.333%;
+        padding: 0 20.5px;
+        @media (max-width: 1300px) {
+            padding: 0 0 0 10px;
+            margin: 70px 0px 0px 0px;
+        }
+        @media (max-width: 510px) {
+            padding: 0 8px;
+        }
+        
+    }
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 1300px) {
+        flex-direction: row;
+    }
+    @media (max-width: 510px) {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    &__image {
+        img{
+            @media (max-width: 1300px) {
+                width: 252px;
+            }
+        }
+    }
+
+    &__body {
+        margin: 84px 0px 0px 0px;
+        @media (max-width: 1300px) {
+            margin: 0;
+            padding: 0 10px 0 15px;
+        }
+        @media (max-width: 510px) {
+            margin: 20px 0px 0px 0px;
+            padding: 0 10px;
+        }
+    }
+
+    &__title {
+        font-family: "Merriweather Sans";
+        font-weight: bold;
+        font-size: 24px;
+        line-height: calc(30 / 24 * 100%);
+        @media (max-width: 510px) {
+            text-align: center;
+        }
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: calc(20 / 16 * 100%);
+        color: rgba(0, 0, 0, 0.5);
+        :last-child{
+            font-size: 18px;
+            line-height: calc(22 / 18 * 100%);
+            
+            color: #F78065;
+        }
+        p {
+            padding: 34px 0 0 0;
+            
+        }
+        @media (max-width: 510px) {
+            text-align: center;
+        }
+    }
+}
+//============ADVANTAGES=======================================================>
+
+.advantages {
+    margin: 253px 0px 0px 0px;
+    
+    &__title {
+        @media (max-width: 1300px) {
+            margin: 0px  0px 0px 15px;
+        }
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: row ;
+        justify-content: space-between;
+        margin: 108px -23px 0px -23px;
+        @media (max-width: 1300px) {
+            flex-wrap: wrap;
+            margin:  -23px 0px  0px 0px;
+        }
+        
+        
+    }
+
+    &__column {
+        flex: 0 1 25%;
+        display: flex;
+        flex-direction: column;
+        padding:0 23px;
+        @media (max-width: 1300px) {
+            flex: 0 1 50%;
+            margin: 65px 0px 0px 0px;
+        }
+        @media (max-width: 510px) {
+            margin: 65px 0px 0px 0px;
+            flex: 0 1 auto;
+        }
+    }
+
+    &__icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    &__body {
+        margin: 69px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+    }
+
+    &__lable {
+        
+    }
+
+    &__text {
+        margin: 31px 0px 0px 0px;
+        
+    }
+
+    &__button {
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: calc(22/18*100%);
+
+        color: #F78065;
+        margin: 16px 0px 0px 0px;
+    }
+}
+//============PREWIE=======================================================>
+
+.photos {
+margin: 263px 0px 0px 0px;
+    &__row {
+        display: flex;
+        flex-direction: row;
+        @media (max-width: 1300px) {
+            flex-direction:column;
+            align-items: center;
+        }
+    }
+
+    &__prewie {
+        flex: 0 1 33.333%;
+        display: flex;
+        flex-direction: column;
+        max-width: 325px;
+        margin: 0px 127px 0px 0px;
+        @media (max-width: 1300px) {
+            max-width: 650px;
+            flex: 0 1 auto;
+            margin: 0;
+        }
+        @media (max-width: 850px) {
+            justify-content: center;
+            align-items: center;
+            margin: 0px 20px;
+        }
+    }
+
+    &__gallery {
+        flex: 0 1 67.667%;
+        display: flex;
+        @media (max-width: 1300px) {
+            flex: 1 1 auto;
+        }
+        @media (max-width: 850px) {
+            flex-direction:column;
+            align-items: center;
+        }
+    }
+}
+
+.prewie {
+
+    &__body {
+        @media (max-width: 850px) {
+            text-align: center;
+        }
+    }
+
+    &__title {
+        
+    }
+
+    &__text {
+        margin: 32px 0px 0px 0px;
+        font-family: Montserrat;
+        font-size: 18px;
+        line-height: calc(22 / 18 * 100%);
+
+        color: #000000;
+
+        opacity: 0.5;
+    }
+
+    
+}
+
+.button {
+    margin: 48px 0px 0px 0px;
+    position: relative;
+    width: 250px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F78065;
+    
+    &__image {
+        
+        
+    }
+
+    &__text {
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 125%;
+
+        color: #FFFFFF;
+        margin: 0px  0px 0px 9px;
+
+    }
+}
+.gallery {
+margin: 0 -24.5px;
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        padding:0 24.5px;
+        @media (max-width: 1300px) {
+            margin: 40px 0px 0px 0px;
+        }
+        
+        
+    }
+
+    &__image {
+
+    }
+
+    &__body {
+        margin: 24px 0px 0px 0px;
+    }
+
+    &__title {
+        font-family: "Merriweather Sans";
+        font-weight: bold;
+        font-size: 24px;
+        line-height: calc(30 / 24 * 100%);
+
+        color: #000000;
+
+    }
+
+    &__subtitle {
+        margin: 8px 0px 0px 0px;
+
+        font-size: 14px;
+        line-height: calc(17 / 14 * 100%);
+
+        color: #3F3D56;
+
+    }
+
+    &__link {
+        margin: 11px 0px 0px 0px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: calc(22 / 18 * 100%);
+        color: #F78065;
+
+    }
+}
+//============SEGMENT=======================================================>
+
+.segment {
+margin: 232px 0px 0px 0px;
+    
+    &__title {
+        @media (max-width: 1300px) {
+            margin: 0px 25px 0px 25px; 
+        }
+    }
+
+    &__row {
+        display: flex;
+        margin: 0 -20.5px;
+        @media (max-width: 1300px) {
+            flex-direction: column;
+        }
+    }
+
+    &__column {
+        padding: 0 20.5px;
+        margin: 108px 0px 0px 0px;
+        flex: 0 1 33.333%;
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 1300px) {
+            max-width: 800px;
+            margin: 60px 25px 0 25px;
+        }
+        
+    }
+
+    &__icon {
+    }
+
+    &__lable {
+        margin: 64px 0px 0px 0px;
+        flex: 1 1 auto;
+    }
+
+    &__text {
+        margin: 52px 0px 0px 0px;
+        
+    }
+}
+
+//============FOOTER=======================================================>
+.footer {
+    margin: 251px 0px 0px 0px;
+    background: #F7F7F7;
+    &__row {
+        display: flex;
+        flex-direction: column;
+        padding: 96px 0 63px 0;
+    }
+
+    &__columns {
+        display: flex;
+        @media (max-width: 1300px) {
+            flex-direction: column;
+        }
+    }
+
+    &__company {
+        
+    }
+
+    &__faqs {
+        display: flex;
+        
+    }
+
+    &__menu {
+        margin: 85px 0px 0px 0px;
+        display: flex;
+    }
+}
+
+.company {
+max-width: 304px;
+@media (max-width: 1300px) {
+    max-width: 800px;
+    margin: 0 15px;
+}
+    &__name {
+        font-family: "Merriweather Sans";
+        font-weight: bold;
+        font-size: 24px;
+        line-height: calc(30 / 24 * 100%);
+    }
+
+    &__title {
+        margin: 16px 0px 0px 0px;
+        font-family: "Merriweather Sans";
+        font-weight: bold;
+        font-size: 48px;
+        line-height: calc(60 / 48 * 100%);
+    }
+}
+.faqs {
+    display: flex;
+    justify-content: center;
+    padding:0 0 0 157px ;
+    margin: 0 -62.5px;
+    @media (max-width: 1300px) {
+        padding:50px 0 0 0 ;
+        margin: 0 15px;
+    }
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
+    &__column {
+        padding: 0 62.5px;
+        @media (max-width: 700px) {
+            padding: 0 35px;
+            margin: 0 0 15px 0;
+        }
+        @media (max-width: 700px) {
+            @media (max-width: 700px) {
+                padding: 0 35px;
+                margin: 20px 0 15px 0;
+            }
+        }
+    }
+
+    &__body {
+    }
+
+    &__title {
+        font-family: "Merriweather Sans";
+        font-weight: bold;
+        font-size: 18px;
+        line-height: calc(23 / 18 * 100%);
+        flex: 1 1 auto;
+    }
+
+    &__links {
+        
+        li {
+            margin: 24px 0px 0px 0px;
+            a{
+            font-size: 14px;
+            line-height: calc(17 / 14 * 100%);
+            color: #000000;
+            }
+    }   
+}
+}
+.menu {
+border-top: 1px solid rgba(0, 0, 0, 0.2);
+padding: 28px 0 0 0;
+@media (max-width: 600px) {
+    padding: 0 0 0 0;
+}
+@media (max-width: 1300px) {
+    margin: 0 15px;
+}
+    &__rights {
+        flex: 1 1 auto;
+        @media (max-width: 600px) {
+            margin: 20px 0px 0px 0px;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        @media (max-width: 600px) {
+            margin: 0 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        :not(:first-child){
+            padding: 0 0 0 48px;
+            @media (max-width: 600px) {
+                padding: 0 10px;
+            }
+        }
+        li {
+            @media (max-width: 600px) {
+                margin: 20px 0px 0px 0px;
+            }
+             a{
+            font-size: 14px;
+            line-height: calc(17 / 14 * 100%);
+            color: #000000;
+        }
+    }
+    }
+}
+
